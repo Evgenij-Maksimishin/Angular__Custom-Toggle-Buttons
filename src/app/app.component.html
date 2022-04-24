@@ -1,0 +1,46 @@
+<div class="toggle-btn-section">
+  <div class="container">
+    <div class="toggle-btns-content">
+
+      <button 
+        class="toggle-btn"
+        [ngClass]="{'selected': toggleBtnData[0].selected}"
+        (click)="isSelectBtnToggleDate(0); showBntContent('First')"
+        >
+        {{toggleBtnData[0].title}}
+      </button>
+
+      <button 
+        class="toggle-btn" 
+        [ngClass]="{'selected': toggleBtnData[1].selected}"
+        (click)="isSelectBtnToggleDate(1); showBntContent('Second')"
+        >
+        {{toggleBtnData[1].title}}
+      </button>
+
+      <button 
+        class="toggle-btn" 
+        [ngClass]="{'selected': toggleBtnData[2].selected}"
+        (click)="isSelectBtnToggleDate(2); showBntContent('Third')"
+        >
+        {{toggleBtnData[2].title}}
+      </button>
+
+    </div>
+
+    <div class="btns-contnent">
+      <div class="first-btn-contnet" *ngIf="isShowBntContent === 'First'">
+        <h1>First Button Content</h1>
+      </div>
+  
+      <div class="second-btn-contnet" *ngIf="isShowBntContent === 'Second'">
+        <h1>Second Button Content</h1>
+      </div>
+  
+      <div class="third-btn-contnet" *ngIf="isShowBntContent === 'Third'">
+        <h1>Third Button Content</h1>
+      </div>
+    </div>
+
+  </div>
+</div>
