@@ -1,2 +1,11 @@
-<app-toggle-buttons></app-toggle-buttons>
-<button>Toggle Buttons</button>
+<button (click)="modalPopUpOpen()">Toggle Buttons</button>
+
+<app-modal *ngIf="isModalPopUpOpen">
+    <div class="modal-content">
+        <app-toggle-buttons></app-toggle-buttons>
+
+        <div class="btns-block">
+            <button (click)="closeModalPopUp()" class="btn-close">Close</button>
+        </div>
+    </div>
+</app-modal>

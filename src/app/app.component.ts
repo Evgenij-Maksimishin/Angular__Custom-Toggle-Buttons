@@ -6,5 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
+  public isModalPopUpOpen = false;
+
   ngOnInit(): void {}
+
+  public modalPopUpOpen () {
+    this.isModalPopUpOpen = true;
+  }
+
+  public closeModalPopUp () {
+    this.isModalPopUpOpen = false;
+  }
+ 
 }
