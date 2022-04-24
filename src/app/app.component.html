@@ -1,11 +1,17 @@
-<button (click)="modalPopUpOpen()">Toggle Buttons</button>
+<div class="app-section">
+    <div class="container">
+        <div class="app-content">
+            <button class="toggle-btn" (click)="modalPopUpOpen()">Toggle Buttons</button>
 
-<app-modal *ngIf="isModalPopUpOpen" (outsideClick)="closeModalPopUp()">
-    <div class="modal-content">
-        <app-toggle-buttons></app-toggle-buttons>
+            <app-modal *ngIf="isModalPopUpOpen" (outsideClick)="closeModalPopUp()">
+                <div class="modal-content">
+                    <app-toggle-buttons></app-toggle-buttons>
 
-        <div class="btns-block">
-            <button class="btn-close" (click)="closeModalPopUp()">Close</button>
+                    <div class="btns-block">
+                        <button class="btn-close" (click)="closeModalPopUp()">Close</button>
+                    </div>
+                </div>
+            </app-modal>
         </div>
     </div>
-</app-modal>
+</div>
