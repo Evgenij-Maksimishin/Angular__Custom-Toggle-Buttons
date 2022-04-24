@@ -1,5 +1,5 @@
 <div class="modal-section">
-    <div class="modal-content">
+    <div class="modal-content" appOutsideClick (outsideClick)="outsideClick.emit($event)">
         <ng-content></ng-content>
     </div>
 </div>
