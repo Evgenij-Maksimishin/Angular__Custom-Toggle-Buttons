@@ -1,4 +1,6 @@
 .toggle-btn-section {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
     .toggle-btns-content {
         .toggle-btn {
@@ -9,6 +11,7 @@
             cursor: pointer;
             outline: 0;
             border: 0;
+            margin-top: 15px;
 
             &.selected {
                 background: rgb(238, 17, 17);
