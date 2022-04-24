@@ -1,5 +1,6 @@
 .app-section {
     .app-content {
+        text-align: center;
         .toggle-btn {
             position: absolute;
             top: 50%;
@@ -19,9 +20,6 @@
         height: 400px;
         background: rgb(5, 5, 29);
         .btns-block {
-            display: flex;
-            flex-direction: row-reverse;
-            justify-content: center;
             margin-top: 60%;
             .btn-close {
                 padding: 8px;
